@@ -1,0 +1,210 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.padding {
+    padding: 40px 100px;
+}
+.margin {
+    margin: 40px 0;
+}
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.logo{
+    width: 100px;
+}
+.nav {
+    width: 100%;
+}
+
+/* banner section */
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/banner2.jpg");
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.description{
+    position: absolute;
+    color: whitesmoke;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.description h2 {
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+.description p{
+    margin-bottom: 10px;
+}
+.description span{
+    color: red;
+}
+.description p{
+    width: 400px
+}
+.description a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 8px 10px;
+    color: rgb(219, 219, 219);
+    background-color: rgb(23, 17, 56);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease-in;
+}
+.description a:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #465b52;
+}
+
+/* about us styles */
+#about {
+    display: flex;
+    flex-direction: column;
+}
+#about h4{
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #556270;  
+}
+.activities {
+    display: flex;
+    justify-content: space-between;
+}
+#about .card{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(221, 214, 214);
+    cursor: pointer;
+    box-shadow: rgb(228, 181, 181);
+    padding: 8px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+#about .card img{
+    width: 100%;
+}
+#about .card h2{
+    font-family: "Poppins", sans-serif;
+    color: #556270;
+    margin: 10px 0;
+}
+#about .card span{
+    color: #606063;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+#about .card .details p{
+    margin-top: 10px;
+    color: #606063;
+    font-size: 16px;
+}
+/* footer styles */
+.social-media-icons{
+    height: 20px;
+}
+
+footer {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .col .follow{
+    display: flex;
+    flex-direction: row;
+}
+footer .col .follow a {
+    margin-right: 10px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 16px;
+    padding-bottom: 14px;
+    /* font-weight: 600; */
+}
+footer p{
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    color: #465b52;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+/* media queries */
+@media screen and (max-width: 480px){
+    .padding {
+        padding: 10px 14px;
+    }
+    .banner {
+        height: 80vh;
+    }
+    .description {
+        width: 80%;
+        margin-top: 250px;
+        margin-left: 20px;
+    }
+    .description p {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .activities {
+        flex-direction: column;
+        width: 100%;
+    }
+    #about .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #about h4 {
+        margin-bottom: 30px;
+        margin-top: 15px;
+        font-size: 26px;
+    }
+}
