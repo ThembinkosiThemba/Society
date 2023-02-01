@@ -11,30 +11,34 @@
 
 <body>
     <!-- navigation -->
-    <!-- <section id="navigation"> -->
-        <!-- contains entire navigation -->
-        <!-- <div id="topnav" class="nav">
-            <a href="#home" class="active">Logo</a> -->
-            <!-- navlinks hidden by default -->
-            <!-- <div id="nav-links">
-                <div class="dropdown">
-                    <button class="dropbtn">About <img src="assets/dropdown.png" alt=""></button>
-                    <div class="drop-content">
-                        <a href="#about">About</a>
-                        <a href="#joinUs">Subscribe</a>
-                        <a href="#contact">Contact Us</a>
-                    </div>
-                </div> -->
-                <!-- <a href="#about">About</a>
-                <a href="#joinUs">Subscribe</a>
-                <a href="#contact">Contact Us</a> -->
-            <!-- </div> -->
-            <!-- hamburger icon -->
-            <!-- <a href="javascript:void(0);" class="manu-icon " onclick="myFunction()"><img src="assets/menu.png" alt=""></a> -->
-        <!-- </div>
-    </section> -->
+    <header id="navbar">
+        <div id="brand"><a href="#"><img src="assets/logo.jpg" class="club-logo" alt=""></a></div>
+        <nav>
+            <ul>
+                <li><a href="#aboutUs">About</a></li>
+                <li id="subscribe"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMHIIQ9wiEjbrYr7MECCmtHedksuOzqltGahL8ZiRnbj-kA/viewform?usp=sf_link" >Join Us</a></li>
+                <li><a href="#activity">Activities</a></li>
+                <!-- <li><a href="">Innovation Hub</a></li> -->
+                <li><a href="#followUs">Follow</a></li>
+                <li><a href="#contact">Reach Out!</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="#aboutUs">About</a></li>
+                <li id="subscribe"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMHIIQ9wiEjbrYr7MECCmtHedksuOzqltGahL8ZiRnbj-kA/viewform?usp=sf_link" >Join Us</a></li>
+                <li><a href="#activity">Activities</a></li>
+                <li><a href="#contact">Reach Out!</a></li>
+                <!-- <li><a href="">Innovation Hub</a></li> -->
+                <li><a href="https://www.facebook.com/Uneswa-ICT-Society-116495064667989/"><img src="assets/fb.png" alt="facebook" class="social-media-icons"></a></li>
+                <li><a href="https:/instagram.com/uneswaictsociety?igshid=ZDdkNTZiNTM="><img src="assets/IG.png" alt="Instagram" class="social-media-icons"></a></li>
+            </ul>
+          </div>
+    </header>
 
-    <!-- body section -->
     <!-- banner section -->
     <section class="banner">
         <div class="description">
@@ -47,7 +51,33 @@
 
     <!-- about section -->
     <section id="about" class="padding">
-        <h4>Upcoming Activities</h4>
+
+        <h4 id="aboutUs">About Us</h4>
+        <p>
+            The main vision of this society is to cultivate innovativeness in the students and create a safe space for likeminded individuals to share and develop ideas. This will be archieved through fostering essential problem solving skills and techniques required in this new age of fast technological advancement. <br><br>
+
+            The society will be an environment where coding is an easy and fun task and will dismantle the stereotype that makes programming be seen as difficult and impossible 
+            amongst students by creating an engaging, interactive arena. <br><br>
+
+            Some of the core <strong>objectives</strong> of this society are as follows: <br>
+             
+             &nbsp;   <li>Sharpen students' skills, from what they learn in class to what they do extracurricular. The club aims in providing more practical projects for the students to engage in order to be effective problem solvers.</li>
+             &nbsp; <li>
+                Fostering group coding projects. In the tech industry, apps and software is built by 
+                teams of people, thus the society’s objective is to build the spirit of collaboration with 
+                and amongst students and foster specialization in the different types of programming, 
+                be it backend or database development.
+             </li>
+             &nbsp;  <li>
+                Providing outside events and speakers for students to see the concepts learned in class 
+                in action through various professionals who will translate theory into practicality
+             </li>
+             <br>
+             <a target="blank" href="assets/society-about.pdf">Read More!</a>
+        </p>
+        <br><br>
+
+        <h4 id="activity">Upcoming Activities</h4>
         <div class="activities">
             <div class="card">
                 <!-- image -->
@@ -83,30 +113,6 @@
             </div>
         </div>
         <br><br>
-        <h4 id="aboutUs">About Us</h4>
-        <p>
-            The main vision of this society is to cultivate innovativeness in the students and create a safe space for likeminded individuals to share and develop ideas. This will be archieved through fostering essential problem solving skills and techniques required in this new age of fast technological advancement. <br><br>
-
-            The society will be an environment where coding is an easy and fun task and will dismantle the stereotype that makes programming be seen as difficult and impossible 
-            amongst students by creating an engaging, interactive arena. <br><br>
-
-            Some of the core <strong>objectives</strong> of this society are as follows: <br>
-             
-             &nbsp;   <li>Sharpen students' skills, from what they learn in class to what they do extracurricular. The club aims in providing more practical projects for the students to engage in order to be effective problem solvers.</li>
-             &nbsp; <li>
-                Fostering group coding projects. In the tech industry, apps and software is built by 
-                teams of people, thus the society’s objective is to build the spirit of collaboration with 
-                and amongst students and foster specialization in the different types of programming, 
-                be it backend or database development.
-             </li>
-             &nbsp;  <li>
-                Providing outside events and speakers for students to see the concepts learned in class 
-                in action through various professionals who will translate theory into practicality
-             </li>
-             <br>
-             <a target="blank" href="assets/society-about.pdf">Read More!</a>
-        </p>
-        <br><br>
         <h4 id="joinUs">Subscription</h4>
         <p>
             To become a member, you must subscibe with a standard society fee of E50.00 per semester. Some of the benefits of being a member are as follows: <br><br>
@@ -114,12 +120,12 @@
             2. Enligible to parcitipate in available society projects and competitions<br>
             3. Access to services provided by society partners etc.
             <br><br>
-            If you want to be a member of the society,<br> <a href="https://docs.google.com/forms/d/e/1FAIpQLScEMHIIQ9wiEjbrYr7MECCmtHedksuOzqltGahL8ZiRnbj-kA/viewform?usp=sf_link">Click Here</a>  to register. For more information,<br> <a href="#contact">Contact Us</a> using the listed details.
-        </p>
-        <br>
-        
-    </section>
+            If you want to be a member of the society, <a href="https://docs.google.com/forms/d/e/1FAIpQLScEMHIIQ9wiEjbrYr7MECCmtHedksuOzqltGahL8ZiRnbj-kA/viewform?usp=sf_link">Click Here</a>  to register. <br><br>
 
+            For more information, <a href="#contact">Contact Us</a> using the listed details.
+        </p>
+        <br>     
+    </section>
 
     <!-- footer -->
     <footer class="padding">
@@ -127,13 +133,13 @@
             <!-- <img src="assets/logo.jpg" alt="" class="logo"> -->
             <h4>Address</h4>
             <p>
+                Facalty of Science & Engineering <br>
                 Department of Computer Science <br>
                 University of Eswatini <br>
                 Private Bag 4 <br>
                 Kwaluseni, M201, Eswatini
             </p>
         </div>
-
         <div class="col">
             <h4 id="contact">Contact Us</h4>
             <p><strong>Telephone: </strong>+268 78280176</p>
@@ -141,44 +147,19 @@
         </div>
 
         <div class="col">
-            <h4>Follow Us</h4>
+            <h4 id="followUs">Follow Us</h4>
             <div class="follow">
                 <a href="https://www.facebook.com/Uneswa-ICT-Society-116495064667989/"><img src="assets/fb.png" alt="facebook" class="social-media-icons"></a>
-                <a href="https:/instagram.com/uneswaictsociety?igshid=ZDdkNTZiNTM="><img src="assets/IG.png" alt="Instagram" class="social-media-icons"></a>
+                <a href="https://instagram.com/uneswaictsociety?igshid=ZDdkNTZiNTM="><img src="assets/IG.png" alt="Instagram" class="social-media-icons"></a>
             </div>
             
         </div>
-
         <!-- copyright -->
         <div class="copyright">
             <p>Uneswa ICT Society | Copyright 2023. All Rights Reserved</p>
         </div>
     </footer>
-
-
-        <!-- address -->
-        <!-- <div class="col">
-            <h4>Address</h4>
-            <p>
-                Department of Computer Science <br>
-                University of Eswatini <br>
-                Private Bag 4 <br>
-                Kwaluseni, M201, Eswatini
-            </p>
-            <span><strong>Telephone:</strong></span><br>
-            <span><strong>Email:</strong>uneswaictsociety@gmail.com</span>
-        </div> -->
-
-         <!-- social media -->
-        <!-- <div class="col">
-            <h4>Social Media</h4>
-            <a href="#"><img src="assets/fb.png" alt="facebook" class="social-media-icons"></a>
-            <a href=""><img src="assets/IG.png" alt="Instagram" class="social-media-icons"></a>
-            <a href=""><img src="assets/twitter.svg" alt=""></a>
-        </div> -->
-
-
-    
+    <script src="script.js"></script>
 </body>
 
 </html>
