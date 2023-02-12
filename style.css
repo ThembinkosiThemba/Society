@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    font-style: inherit;
 }
 
 .padding {
@@ -28,7 +27,7 @@ header a {
 }
 header {
     padding: 0px 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     position: fixed;
     width: 100%;
     height: 50px;
@@ -65,7 +64,7 @@ ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
-#subscribe{
+/* #subscribe{
   border-radius: 5px;
   padding: 5px 8px;
 }
@@ -76,7 +75,7 @@ ul li:hover {
 
 #subscribe a {
   color: #edcdcd;
-}
+} */
 
 #hamburger-icon {
     margin: auto 0;
@@ -112,7 +111,7 @@ ul li:hover {
     align-items: flex-end;
     margin-right: 8px;
     justify-content: flex-start;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
     height: 400px
 }
   
@@ -128,8 +127,7 @@ ul li:hover {
 
 .mobile-menu li {
     margin-bottom: 10px;
-    font-size: 16px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
   
 
@@ -145,7 +143,7 @@ ul li:hover {
 
 /* banner section */
 .banner{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/banner2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("assets/inno4.jpg");
     height: 100vh;
     position: relative;
     background-repeat: no-repeat;
@@ -153,25 +151,31 @@ ul li:hover {
     background-size: cover;
     width: 100%;
     padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
 .description{
     position: absolute;
     color: whitesmoke;
-    margin-top: 150px;
-    margin-left: 100px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px
 }
 .description h2 {
     margin-bottom: 8px;
-    font-size: 30px;
+    font-size: 40px;
 }
 .description p{
     margin-bottom: 10px;
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 100;
+    
 }
 .description span{
     color: red;
-}
-.description p{
-    width: 400px
 }
 .description a{
     text-decoration: none;
@@ -179,7 +183,7 @@ ul li:hover {
     font-weight: 300;
     padding: 8px 10px;
     color: rgb(219, 219, 219);
-    background-color: #556270;
+    background-color: #724040;
     border-radius: 4px;
     cursor: pointer;
     border: none;
@@ -213,7 +217,7 @@ ul li:hover {
     margin: 100px, 0;
     font-size: 14px;
     font-weight: 300;
-    padding: 8px 6px;
+    padding: 4px 4px;
     color: rgb(219, 219, 219);
     background-color: #556270;
     border-radius: 4px;
@@ -266,6 +270,7 @@ ul li:hover {
     font-size: 16px;
 }
 
+
 /* footer styles */
 .social-media-icons{
     height: 20px;
@@ -274,9 +279,10 @@ ul li:hover {
 footer {
     background-color: white;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: left;
 }
 
 footer .col {
@@ -331,7 +337,7 @@ footer .copyright {
     .banner {
         height: 80vh;
     }
-    .description {
+    /* .description {
         width: 80%;
         margin-top: 250px;
         margin-left: 20px;
@@ -339,6 +345,16 @@ footer .copyright {
     .description p {
         width: 80%;
         margin-bottom: 10px;
+    } */
+    .description {
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+    .description p {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: whitesmoke;
+        font-weight: 100;
     }
 
     .activities {
